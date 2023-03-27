@@ -55,6 +55,7 @@ extension DisneyFilmsViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = viewDisneyFilms.myTableView.dequeueReusableCell(withIdentifier: CellDisneyFilmsTableViewCell.identifier, for: indexPath) as? CellDisneyFilmsTableViewCell {
+            cell.backgroundColor = .clear
             cell.setupCell(film: viewModelDisney.cellForRows(indexPath: indexPath))
             return cell
         }
@@ -62,7 +63,20 @@ extension DisneyFilmsViewController: UITableViewDelegate, UITableViewDataSource 
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == viewModelDisney.addDisney.count - 10 && !viewModelDisney.loadinRequest {
+            self.viewModelDisney.currentPageAdd()
+            self.viewModelDisney.requestDisneyAddViewModel { [weak self] success in
+                guard let self = self else { return }
+                self.viewModelDisney.loadinRequest = false
+                if success {
+                    self.viewDisneyFilms.myTableView.reloadData()
+                }
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 170
     }
 }
