@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2810602694E810E863699BBD /* Pods_Disney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB6994FD2C5EBBCFBA9E884 /* Pods_Disney.framework */; };
+		B6772B4729D1B7D300676E48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4629D1B7D300676E48 /* Coordinator.swift */; };
+		B6772B4A29D1B8F300676E48 /* DisneyFilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4929D1B8F300676E48 /* DisneyFilmsViewController.swift */; };
+		B6772B4C29D1B90A00676E48 /* DisneyFilmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4B29D1B90A00676E48 /* DisneyFilmsView.swift */; };
+		B6772B4E29D1B92200676E48 /* DisneyFilmsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4D29D1B92200676E48 /* DisneyFilmsViewModel.swift */; };
+		B6772B5029D1BF2A00676E48 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4F29D1BF2A00676E48 /* Request.swift */; };
+		B6772B5329D1C20500676E48 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B5229D1C20500676E48 /* Worker.swift */; };
 		B68B56A229D1345300B0D081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B56A129D1345300B0D081 /* AppDelegate.swift */; };
 		B68B56A429D1345300B0D081 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B56A329D1345300B0D081 /* SceneDelegate.swift */; };
-		B68B56A629D1345300B0D081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B56A529D1345300B0D081 /* ViewController.swift */; };
-		B68B56A929D1345300B0D081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68B56A729D1345300B0D081 /* Main.storyboard */; };
 		B68B56AB29D1345400B0D081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68B56AA29D1345400B0D081 /* Assets.xcassets */; };
 		B68B56AE29D1345400B0D081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68B56AC29D1345400B0D081 /* LaunchScreen.storyboard */; };
+		B68B56BB29D13A8600B0D081 /* Disney.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B56BA29D13A8600B0D081 /* Disney.swift */; };
+		B68D432229D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68D432129D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6772B4629D1B7D300676E48 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B6772B4929D1B8F300676E48 /* DisneyFilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyFilmsViewController.swift; sourceTree = "<group>"; };
+		B6772B4B29D1B90A00676E48 /* DisneyFilmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyFilmsView.swift; sourceTree = "<group>"; };
+		B6772B4D29D1B92200676E48 /* DisneyFilmsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyFilmsViewModel.swift; sourceTree = "<group>"; };
+		B6772B4F29D1BF2A00676E48 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		B6772B5229D1C20500676E48 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		B68B569E29D1345300B0D081 /* Disney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68B56A129D1345300B0D081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B68B56A329D1345300B0D081 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B68B56A529D1345300B0D081 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B68B56A829D1345300B0D081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B68B56AA29D1345400B0D081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B68B56AD29D1345400B0D081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B68B56AF29D1345400B0D081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B68B56BA29D13A8600B0D081 /* Disney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney.swift; sourceTree = "<group>"; };
+		B68D432129D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisneyFilmsTableViewCell.swift; sourceTree = "<group>"; };
+		B81F751EADAD2DDB328C6462 /* Pods-Disney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disney.release.xcconfig"; path = "Target Support Files/Pods-Disney/Pods-Disney.release.xcconfig"; sourceTree = "<group>"; };
+		BCB6994FD2C5EBBCFBA9E884 /* Pods_Disney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB33C902D125663D61AEE3F7 /* Pods-Disney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disney.debug.xcconfig"; path = "Target Support Files/Pods-Disney/Pods-Disney.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2810602694E810E863699BBD /* Pods_Disney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071F499C69F667F97697DBAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB33C902D125663D61AEE3F7 /* Pods-Disney.debug.xcconfig */,
+				B81F751EADAD2DDB328C6462 /* Pods-Disney.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4C80F654BFD52BD1520FB95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6994FD2C5EBBCFBA9E884 /* Pods_Disney.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6772B4829D1B86D00676E48 /* DisneyFilmsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B68D432029D1FC7F004C3CF3 /* CellDisneyFilms */,
+				B6772B4B29D1B90A00676E48 /* DisneyFilmsView.swift */,
+				B6772B4929D1B8F300676E48 /* DisneyFilmsViewController.swift */,
+				B6772B4D29D1B92200676E48 /* DisneyFilmsViewModel.swift */,
+			);
+			name = DisneyFilmsViewController;
+			sourceTree = "<group>";
+		};
+		B6772B5129D1C1E700676E48 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				B6772B5229D1C20500676E48 /* Worker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
 		B68B569529D1345300B0D081 = {
 			isa = PBXGroup;
 			children = (
 				B68B56A029D1345300B0D081 /* Disney */,
+				B68B56B529D1365600B0D081 /* Source */,
 				B68B569F29D1345300B0D081 /* Products */,
+				071F499C69F667F97697DBAC /* Pods */,
+				A4C80F654BFD52BD1520FB95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +115,63 @@
 			children = (
 				B68B56A129D1345300B0D081 /* AppDelegate.swift */,
 				B68B56A329D1345300B0D081 /* SceneDelegate.swift */,
-				B68B56A529D1345300B0D081 /* ViewController.swift */,
-				B68B56A729D1345300B0D081 /* Main.storyboard */,
 				B68B56AA29D1345400B0D081 /* Assets.xcassets */,
 				B68B56AC29D1345400B0D081 /* LaunchScreen.storyboard */,
 				B68B56AF29D1345400B0D081 /* Info.plist */,
 			);
 			path = Disney;
+			sourceTree = "<group>";
+		};
+		B68B56B529D1365600B0D081 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B68B56B629D1366700B0D081 /* Coordinator */,
+				B68B56B829D1368500B0D081 /* Model */,
+				B68B56B929D136C100B0D081 /* Request */,
+				B68B56B729D1367100B0D081 /* ViewControllers */,
+				B6772B5129D1C1E700676E48 /* Worker */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B68B56B629D1366700B0D081 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B6772B4629D1B7D300676E48 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B68B56B729D1367100B0D081 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6772B4829D1B86D00676E48 /* DisneyFilmsViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B68B56B829D1368500B0D081 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B68B56BA29D13A8600B0D081 /* Disney.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B68B56B929D136C100B0D081 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				B6772B4F29D1BF2A00676E48 /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		B68D432029D1FC7F004C3CF3 /* CellDisneyFilms */ = {
+			isa = PBXGroup;
+			children = (
+				B68D432129D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift */,
+			);
+			name = CellDisneyFilms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B68B56B229D1345400B0D081 /* Build configuration list for PBXNativeTarget "Disney" */;
 			buildPhases = (
+				2E00329890EEECE9A4A60857 /* [CP] Check Pods Manifest.lock */,
 				B68B569A29D1345300B0D081 /* Sources */,
 				B68B569B29D1345300B0D081 /* Frameworks */,
 				B68B569C29D1345300B0D081 /* Resources */,
+				123863C608BC3D21347764C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +236,74 @@
 			files = (
 				B68B56AE29D1345400B0D081 /* LaunchScreen.storyboard in Resources */,
 				B68B56AB29D1345400B0D081 /* Assets.xcassets in Resources */,
-				B68B56A929D1345300B0D081 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		123863C608BC3D21347764C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Disney/Pods-Disney-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Disney/Pods-Disney-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Disney/Pods-Disney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E00329890EEECE9A4A60857 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Disney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B68B569A29D1345300B0D081 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68B56A629D1345300B0D081 /* ViewController.swift in Sources */,
+				B6772B4A29D1B8F300676E48 /* DisneyFilmsViewController.swift in Sources */,
+				B6772B5329D1C20500676E48 /* Worker.swift in Sources */,
+				B6772B4729D1B7D300676E48 /* Coordinator.swift in Sources */,
+				B6772B5029D1BF2A00676E48 /* Request.swift in Sources */,
 				B68B56A229D1345300B0D081 /* AppDelegate.swift in Sources */,
+				B68D432229D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift in Sources */,
 				B68B56A429D1345300B0D081 /* SceneDelegate.swift in Sources */,
+				B6772B4C29D1B90A00676E48 /* DisneyFilmsView.swift in Sources */,
+				B6772B4E29D1B92200676E48 /* DisneyFilmsViewModel.swift in Sources */,
+				B68B56BB29D13A8600B0D081 /* Disney.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B68B56A729D1345300B0D081 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B68B56A829D1345300B0D081 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B68B56AC29D1345400B0D081 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +431,7 @@
 		};
 		B68B56B329D1345400B0D081 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB33C902D125663D61AEE3F7 /* Pods-Disney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,7 +441,7 @@
 				INFOPLIST_FILE = Disney/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +459,7 @@
 		};
 		B68B56B429D1345400B0D081 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81F751EADAD2DDB328C6462 /* Pods-Disney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,7 +469,7 @@
 				INFOPLIST_FILE = Disney/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
