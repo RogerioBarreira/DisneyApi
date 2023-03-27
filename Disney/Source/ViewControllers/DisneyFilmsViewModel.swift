@@ -12,6 +12,14 @@ class DisneyFilmsViewModel: NSObject {
     private let worker = Worker()
     private var disneyFilms: [Datum] = []
     
+    var numberOfRows: Int {
+        disneyFilms.count
+    }
+    
+    func cellForRows(indexPath: IndexPath) -> Datum {
+        disneyFilms[indexPath.row]
+    }
+    
     func requestDisneyViewModel(completion: @escaping(Bool) -> Void) {
         
         worker.workerDisney { disneyFilms, success in

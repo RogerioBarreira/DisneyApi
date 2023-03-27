@@ -1,0 +1,6 @@
+framework module Pods_Disney {
+  umbrella header "Pods-Disney-umbrella.h"
+
+  export *
+  module * { export * }
+}
