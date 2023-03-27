@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2810602694E810E863699BBD /* Pods_Disney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB6994FD2C5EBBCFBA9E884 /* Pods_Disney.framework */; };
 		B6772B4729D1B7D300676E48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4629D1B7D300676E48 /* Coordinator.swift */; };
 		B6772B4A29D1B8F300676E48 /* DisneyFilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4929D1B8F300676E48 /* DisneyFilmsViewController.swift */; };
 		B6772B4C29D1B90A00676E48 /* DisneyFilmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4B29D1B90A00676E48 /* DisneyFilmsView.swift */; };
@@ -18,6 +19,7 @@
 		B68B56AB29D1345400B0D081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68B56AA29D1345400B0D081 /* Assets.xcassets */; };
 		B68B56AE29D1345400B0D081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68B56AC29D1345400B0D081 /* LaunchScreen.storyboard */; };
 		B68B56BB29D13A8600B0D081 /* Disney.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B56BA29D13A8600B0D081 /* Disney.swift */; };
+		B68D432229D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68D432129D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		B68B56AD29D1345400B0D081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B68B56AF29D1345400B0D081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B68B56BA29D13A8600B0D081 /* Disney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney.swift; sourceTree = "<group>"; };
+		B68D432129D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisneyFilmsTableViewCell.swift; sourceTree = "<group>"; };
+		B81F751EADAD2DDB328C6462 /* Pods-Disney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disney.release.xcconfig"; path = "Target Support Files/Pods-Disney/Pods-Disney.release.xcconfig"; sourceTree = "<group>"; };
+		BCB6994FD2C5EBBCFBA9E884 /* Pods_Disney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB33C902D125663D61AEE3F7 /* Pods-Disney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disney.debug.xcconfig"; path = "Target Support Files/Pods-Disney/Pods-Disney.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,15 +47,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2810602694E810E863699BBD /* Pods_Disney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071F499C69F667F97697DBAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB33C902D125663D61AEE3F7 /* Pods-Disney.debug.xcconfig */,
+				B81F751EADAD2DDB328C6462 /* Pods-Disney.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4C80F654BFD52BD1520FB95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6994FD2C5EBBCFBA9E884 /* Pods_Disney.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6772B4829D1B86D00676E48 /* DisneyFilmsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B68D432029D1FC7F004C3CF3 /* CellDisneyFilms */,
 				B6772B4B29D1B90A00676E48 /* DisneyFilmsView.swift */,
 				B6772B4929D1B8F300676E48 /* DisneyFilmsViewController.swift */,
 				B6772B4D29D1B92200676E48 /* DisneyFilmsViewModel.swift */,
@@ -71,6 +97,8 @@
 				B68B56A029D1345300B0D081 /* Disney */,
 				B68B56B529D1365600B0D081 /* Source */,
 				B68B569F29D1345300B0D081 /* Products */,
+				071F499C69F667F97697DBAC /* Pods */,
+				A4C80F654BFD52BD1520FB95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +166,14 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		B68D432029D1FC7F004C3CF3 /* CellDisneyFilms */ = {
+			isa = PBXGroup;
+			children = (
+				B68D432129D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift */,
+			);
+			name = CellDisneyFilms;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B68B56B229D1345400B0D081 /* Build configuration list for PBXNativeTarget "Disney" */;
 			buildPhases = (
+				2E00329890EEECE9A4A60857 /* [CP] Check Pods Manifest.lock */,
 				B68B569A29D1345300B0D081 /* Sources */,
 				B68B569B29D1345300B0D081 /* Frameworks */,
 				B68B569C29D1345300B0D081 /* Resources */,
+				123863C608BC3D21347764C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +241,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		123863C608BC3D21347764C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Disney/Pods-Disney-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Disney/Pods-Disney-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Disney/Pods-Disney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E00329890EEECE9A4A60857 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Disney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B68B569A29D1345300B0D081 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -213,6 +293,7 @@
 				B6772B4729D1B7D300676E48 /* Coordinator.swift in Sources */,
 				B6772B5029D1BF2A00676E48 /* Request.swift in Sources */,
 				B68B56A229D1345300B0D081 /* AppDelegate.swift in Sources */,
+				B68D432229D1FCA5004C3CF3 /* CellDisneyFilmsTableViewCell.swift in Sources */,
 				B68B56A429D1345300B0D081 /* SceneDelegate.swift in Sources */,
 				B6772B4C29D1B90A00676E48 /* DisneyFilmsView.swift in Sources */,
 				B6772B4E29D1B92200676E48 /* DisneyFilmsViewModel.swift in Sources */,
@@ -350,6 +431,7 @@
 		};
 		B68B56B329D1345400B0D081 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB33C902D125663D61AEE3F7 /* Pods-Disney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,6 +459,7 @@
 		};
 		B68B56B429D1345400B0D081 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81F751EADAD2DDB328C6462 /* Pods-Disney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

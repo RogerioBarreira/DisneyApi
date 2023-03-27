@@ -22,6 +22,7 @@ class DisneyFilmsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         self.title = "DisneyFilms"
         setupRequest()
+        setupTableView()
     }
     
     override func loadView() {
@@ -29,12 +30,39 @@ class DisneyFilmsViewController: UIViewController {
     }
     
     func setupRequest() {
-        viewModelDisney.requestDisneyViewModel { success in
+        viewDisneyFilms.loading.startAnimating()
+        viewModelDisney.requestDisneyViewModel { [weak self] success in
+            self?.viewDisneyFilms.loading.stopAnimating()
             if success {
-                print("OK")
+                self?.viewDisneyFilms.myTableView.reloadData()
             } else {
                 print("Error")
             }
         }
+    }
+    
+    func setupTableView() {
+        viewDisneyFilms.myTableView.delegate = self
+        viewDisneyFilms.myTableView.dataSource = self
+        viewDisneyFilms.myTableView.register(CellDisneyFilmsTableViewCell.self, forCellReuseIdentifier: CellDisneyFilmsTableViewCell.identifier)
+    }
+}
+
+extension DisneyFilmsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModelDisney.numberOfRows
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = viewDisneyFilms.myTableView.dequeueReusableCell(withIdentifier: CellDisneyFilmsTableViewCell.identifier, for: indexPath) as? CellDisneyFilmsTableViewCell {
+            cell.setupCell(film: viewModelDisney.cellForRows(indexPath: indexPath))
+            return cell
+        }
+        
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
 }
