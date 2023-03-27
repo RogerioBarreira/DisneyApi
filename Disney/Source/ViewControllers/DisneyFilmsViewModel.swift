@@ -8,5 +8,19 @@
 import UIKit
 
 class DisneyFilmsViewModel: NSObject {
-
+    
+    private let worker = Worker()
+    private var disneyFilms: [Datum] = []
+    
+    func requestDisneyViewModel(completion: @escaping(Bool) -> Void) {
+        
+        worker.workerDisney { disneyFilms, success in
+            if success {
+                self.disneyFilms = disneyFilms?.data ?? []
+                completion(true)
+            } else {
+                completion(false)
+            }
+        }
+    }
 }
