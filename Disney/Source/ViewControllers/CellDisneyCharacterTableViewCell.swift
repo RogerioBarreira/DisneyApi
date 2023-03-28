@@ -8,17 +8,17 @@
 import UIKit
 import SDWebImage
 
-class CellDisneyFilmsTableViewCell: UITableViewCell {
+class CellDisneyCharacterTableViewCell: UITableViewCell {
 
-    static var identifier = "CellDisneyFilmsTableViewCell"
+    static var identifier = "CellDisneyCharacterTableViewCell"
     
     let imageFilm: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = .red
+        image.backgroundColor = .systemBackground
         image.contentMode = .scaleAspectFit
         image.layer.borderWidth = 2
-        image.layer.borderColor = UIColor.white.cgColor
+        image.layer.borderColor = UIColor.systemBlue.cgColor
         image.layer.cornerRadius = 75
         image.clipsToBounds = true
         return image
@@ -28,12 +28,12 @@ class CellDisneyFilmsTableViewCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.backgroundColor = .red
-        label.textColor = .white
+        label.textColor = .label
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 20, weight: UIFont.Weight.bold)
         label.numberOfLines = 1
         label.layer.borderWidth = 2
-        label.layer.borderColor = UIColor.white.cgColor
+        label.layer.borderColor = UIColor.systemBlue.cgColor
         label.layer.cornerRadius = 12
         label.clipsToBounds = true
         return label
