@@ -12,11 +12,11 @@ class CellDisneyCharacterTableViewCell: UITableViewCell {
 
     static var identifier = "CellDisneyCharacterTableViewCell"
     
-    let imageFilm: UIImageView = {
+    let imageCell: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.backgroundColor = .systemBackground
-        image.contentMode = .scaleAspectFit
+        image.contentMode = .scaleToFill
         image.layer.borderWidth = 2
         image.layer.borderColor = UIColor.systemBlue.cgColor
         image.layer.cornerRadius = 75
@@ -24,16 +24,16 @@ class CellDisneyCharacterTableViewCell: UITableViewCell {
         return image
     }()
     
-    let titleFilm: UILabel = {
+    let nameCell: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.backgroundColor = .red
+        label.backgroundColor = .systemBlue
         label.textColor = .label
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 20, weight: UIFont.Weight.bold)
         label.numberOfLines = 1
         label.layer.borderWidth = 2
-        label.layer.borderColor = UIColor.systemBlue.cgColor
+        label.layer.borderColor = UIColor.systemBackground.cgColor
         label.layer.cornerRadius = 12
         label.clipsToBounds = true
         return label
@@ -50,32 +50,32 @@ class CellDisneyCharacterTableViewCell: UITableViewCell {
     }
     
     func setupImage() {
-        contentView.addSubview(imageFilm)
-        let bottomConstraint = imageFilm.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5)
+        contentView.addSubview(imageCell)
+        let bottomConstraint = imageCell.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5)
         bottomConstraint.priority = .defaultHigh
         NSLayoutConstraint.activate([
-            imageFilm.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
-            imageFilm.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),
+            imageCell.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            imageCell.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),
             bottomConstraint,
-            imageFilm.heightAnchor.constraint(equalToConstant: 150),
-            imageFilm.widthAnchor.constraint(equalToConstant: 150)
+            imageCell.heightAnchor.constraint(equalToConstant: 150),
+            imageCell.widthAnchor.constraint(equalToConstant: 150)
         ])
 
     }
     
     func setupTitle() {
-        contentView.addSubview(titleFilm)
+        contentView.addSubview(nameCell)
         NSLayoutConstraint.activate([
-            titleFilm.centerYAnchor.constraint(equalTo: imageFilm.centerYAnchor),
-            titleFilm.leadingAnchor.constraint(equalTo: imageFilm.trailingAnchor, constant: 10),
-            titleFilm.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -5),
-            titleFilm.heightAnchor.constraint(equalToConstant: 40)
+            nameCell.centerYAnchor.constraint(equalTo: imageCell.centerYAnchor),
+            nameCell.leadingAnchor.constraint(equalTo: imageCell.trailingAnchor, constant: 10),
+            nameCell.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -5),
+            nameCell.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
     
     func setupCell(film: Datum) {
         let url = URL(string: film.imageURL ?? "")
-        imageFilm.sd_setImage(with: url)
-        titleFilm.text = film.name ?? ""
+        imageCell.sd_setImage(with: url)
+        nameCell.text = film.name ?? ""
     }
 }
