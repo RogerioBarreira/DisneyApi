@@ -28,4 +28,10 @@ class Coordinator: NSObject {
         viewController.viewModelDisney.nameSelect(name: name)
         self.navigationController.pushViewController(viewController, animated: true)
     }
+    
+    func startDisneyDetail(detail: Datum) {
+        let viewController = DisneyDetailCharacterViewController()
+        viewController.viewModelDisneyDetail.detailCharacter(detail: detail)
+        self.navigationController.pushViewController(viewController, animated: true)
+    }
 }

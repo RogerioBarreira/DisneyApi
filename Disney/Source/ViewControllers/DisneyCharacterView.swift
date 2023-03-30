@@ -12,18 +12,10 @@ class DisneyCharacterView: UIView {
     let loading: UIActivityIndicatorView = {
         let load = UIActivityIndicatorView()
         load.translatesAutoresizingMaskIntoConstraints = false
-        load.color = .white
+        load.color = .blue
         load.backgroundColor = .clear
         load.style = .large
         return load
-    }()
-    
-    let mySearchBar: UISearchBar = {
-        let searchBar = UISearchBar()
-        searchBar.translatesAutoresizingMaskIntoConstraints = false
-        searchBar.searchBarStyle = .minimal
-        searchBar.placeholder = "Digite o nome do personagem"
-        return searchBar
     }()
     
     let myTableView: UITableView = {

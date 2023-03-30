@@ -11,13 +11,12 @@ class Worker: NSObject {
     
     private let worker = Request()
     private var disneyFilm: Disney?
-    //https://api.disneyapi.dev/character?name=Mickey%20Mouse
+    
     func workerDisney(nameChar: String?, completion:@escaping(Disney?,Bool)-> Void) {
         
         guard let name = nameChar else { return }
-        let basePath = "https://api.disneyapi.dev/character?name="
+        let basePath = Keys.basePath.rawValue
         let url = "\(basePath)\(name)"
-        print(url)
         
         worker.request(urlString: url, method: .get, custom: Disney.self) { [weak self] disneyFilm, success in
             guard let self = self else { return }
