@@ -12,6 +12,11 @@ class DisneyDetailCharacterViewModel: NSObject {
     private var detailCharacter: Datum?
     //films, shortFilms, tvShows, videoGames: [String]?
     //let parkAttractions: [String]?
+    
+    var detailNext: Datum? {
+        self.detailCharacter
+    }
+    
     var imageUrl: URL? {
         URL(string: detailCharacter?.imageURL ?? "")
     }
