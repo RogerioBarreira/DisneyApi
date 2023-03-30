@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2810602694E810E863699BBD /* Pods_Disney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB6994FD2C5EBBCFBA9E884 /* Pods_Disney.framework */; };
+		B60478CD29D5253C00BA9871 /* CellDisneyDetailNextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60478CC29D5253C00BA9871 /* CellDisneyDetailNextTableViewCell.swift */; };
 		B6772B4729D1B7D300676E48 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4629D1B7D300676E48 /* Coordinator.swift */; };
 		B6772B4A29D1B8F300676E48 /* DisneyCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4929D1B8F300676E48 /* DisneyCharacterViewController.swift */; };
 		B6772B4C29D1B90A00676E48 /* DisneyCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6772B4B29D1B90A00676E48 /* DisneyCharacterView.swift */; };
@@ -26,10 +27,13 @@
 		B68B56AE29D1345400B0D081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68B56AC29D1345400B0D081 /* LaunchScreen.storyboard */; };
 		B68B56BB29D13A8600B0D081 /* Disney.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B56BA29D13A8600B0D081 /* Disney.swift */; };
 		B68D432229D1FCA5004C3CF3 /* CellDisneyCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68D432129D1FCA5004C3CF3 /* CellDisneyCharacterTableViewCell.swift */; };
+		B6B3E18329D5114700592630 /* DisneyDetailNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3E18229D5114700592630 /* DisneyDetailNextViewController.swift */; };
+		B6B3E18529D5119500592630 /* DisneyDetailNextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3E18429D5119500592630 /* DisneyDetailNextViewModel.swift */; };
 		B6ED06D629D36DF2008C4C29 /* DisneyDatailNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ED06D529D36DF2008C4C29 /* DisneyDatailNextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B60478CC29D5253C00BA9871 /* CellDisneyDetailNextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisneyDetailNextTableViewCell.swift; sourceTree = "<group>"; };
 		B6772B4629D1B7D300676E48 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B6772B4929D1B8F300676E48 /* DisneyCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharacterViewController.swift; sourceTree = "<group>"; };
 		B6772B4B29D1B90A00676E48 /* DisneyCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharacterView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		B68B56AF29D1345400B0D081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B68B56BA29D13A8600B0D081 /* Disney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney.swift; sourceTree = "<group>"; };
 		B68D432129D1FCA5004C3CF3 /* CellDisneyCharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisneyCharacterTableViewCell.swift; sourceTree = "<group>"; };
+		B6B3E18229D5114700592630 /* DisneyDetailNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyDetailNextViewController.swift; sourceTree = "<group>"; };
+		B6B3E18429D5119500592630 /* DisneyDetailNextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyDetailNextViewModel.swift; sourceTree = "<group>"; };
 		B6ED06D529D36DF2008C4C29 /* DisneyDatailNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyDatailNextView.swift; sourceTree = "<group>"; };
 		B81F751EADAD2DDB328C6462 /* Pods-Disney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disney.release.xcconfig"; path = "Target Support Files/Pods-Disney/Pods-Disney.release.xcconfig"; sourceTree = "<group>"; };
 		BCB6994FD2C5EBBCFBA9E884 /* Pods_Disney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +89,14 @@
 				BCB6994FD2C5EBBCFBA9E884 /* Pods_Disney.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B60478CB29D5250000BA9871 /* CellDisneyDetailNext */ = {
+			isa = PBXGroup;
+			children = (
+				B60478CC29D5253C00BA9871 /* CellDisneyDetailNextTableViewCell.swift */,
+			);
+			name = CellDisneyDetailNext;
 			sourceTree = "<group>";
 		};
 		B6772B4829D1B86D00676E48 /* DisneyFilmsViewController */ = {
@@ -221,7 +235,10 @@
 		B6ED06D429D36DA1008C4C29 /* DisneyDatailNext */ = {
 			isa = PBXGroup;
 			children = (
+				B60478CB29D5250000BA9871 /* CellDisneyDetailNext */,
 				B6ED06D529D36DF2008C4C29 /* DisneyDatailNextView.swift */,
+				B6B3E18229D5114700592630 /* DisneyDetailNextViewController.swift */,
+				B6B3E18429D5119500592630 /* DisneyDetailNextViewModel.swift */,
 			);
 			name = DisneyDatailNext;
 			sourceTree = "<group>";
@@ -348,6 +365,7 @@
 				B6772B5029D1BF2A00676E48 /* Request.swift in Sources */,
 				B6ED06D629D36DF2008C4C29 /* DisneyDatailNextView.swift in Sources */,
 				B6789CFC29D299E9002B6177 /* DisneyFilterCharacterViewController.swift in Sources */,
+				B6B3E18329D5114700592630 /* DisneyDetailNextViewController.swift in Sources */,
 				B68B56A229D1345300B0D081 /* AppDelegate.swift in Sources */,
 				B68D432229D1FCA5004C3CF3 /* CellDisneyCharacterTableViewCell.swift in Sources */,
 				B68B56A429D1345300B0D081 /* SceneDelegate.swift in Sources */,
@@ -356,7 +374,9 @@
 				B6772B4C29D1B90A00676E48 /* DisneyCharacterView.swift in Sources */,
 				B6772B4E29D1B92200676E48 /* DisneyCharacterViewModel.swift in Sources */,
 				B67AAA4F29D3353200F6414F /* DisneyDetailCharacterView.swift in Sources */,
+				B6B3E18529D5119500592630 /* DisneyDetailNextViewModel.swift in Sources */,
 				B68B56BB29D13A8600B0D081 /* Disney.swift in Sources */,
+				B60478CD29D5253C00BA9871 /* CellDisneyDetailNextTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
