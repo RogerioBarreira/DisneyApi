@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = navigationController
         
         let coordinator = Coordinator(navigationController: navigationController)
-        coordinator.startDisneyFilms()
+        coordinator.startDisneyFilter()
         self.window = window
     }
 

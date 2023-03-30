@@ -18,8 +18,20 @@ class Coordinator: NSObject {
         self.navigationController = navigationController ?? UINavigationController()
     }
     
-    func startDisneyFilms() {
-        let viewController = DisneyFilmsViewController()
+    func startDisneyFilter() {
+        let viewController = DisneyFilterCharacterViewController()
+        self.navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func startDisneyFilms(name: String?) {
+        let viewController = DisneyCharacterViewController()
+        viewController.viewModelDisney.nameSelect(name: name)
+        self.navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func startDisneyDetail(detail: Datum) {
+        let viewController = DisneyDetailCharacterViewController()
+        viewController.viewModelDisneyDetail.detailCharacter(detail: detail)
         self.navigationController.pushViewController(viewController, animated: true)
     }
 }

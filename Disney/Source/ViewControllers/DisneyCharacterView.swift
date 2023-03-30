@@ -7,12 +7,12 @@
 
 import UIKit
 
-class DisneyFilmsView: UIView {
+class DisneyCharacterView: UIView {
     
     let loading: UIActivityIndicatorView = {
         let load = UIActivityIndicatorView()
         load.translatesAutoresizingMaskIntoConstraints = false
-        load.color = .white
+        load.color = .blue
         load.backgroundColor = .clear
         load.style = .large
         return load
