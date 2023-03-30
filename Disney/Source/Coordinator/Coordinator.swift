@@ -34,4 +34,15 @@ class Coordinator: NSObject {
         viewController.viewModelDisneyDetail.detailCharacter(detail: detail)
         self.navigationController.pushViewController(viewController, animated: true)
     }
+    
+    func startDisneyDetailNext(detail: Datum?) {
+        let viewController = DisneyDetailNextViewController()
+        viewController.viewModelDisneyDetailNext.getDisneyDetail(detail: detail)
+        self.navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func startList() {
+        let viewController = DisneyCharacterViewController()
+        self.navigationController.pushViewController(viewController, animated: true)
+    }
 }

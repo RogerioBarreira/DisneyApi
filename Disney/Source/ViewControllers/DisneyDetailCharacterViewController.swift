@@ -23,6 +23,7 @@ class DisneyDetailCharacterViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         self.title = viewModelDisneyDetail.name
         setupUI()
+        setupAction()
     }
     
     override func loadView() {
@@ -40,6 +41,16 @@ class DisneyDetailCharacterViewController: UIViewController {
     
     func setupName() {
         viewDisneyDetail.nameCharacter.text = viewModelDisneyDetail.name
+    }
+    
+    func setupAction() {
+        viewDisneyDetail.myButton.addTarget(self, action: #selector(nextScreean), for: .touchUpInside)
+    }
+    
+    @objc
+    func nextScreean() {
+        let coordinator = Coordinator(navigationController: navigationController)
+        coordinator.startDisneyDetailNext(detail: viewModelDisneyDetail.detailNext)
     }
 
 }
